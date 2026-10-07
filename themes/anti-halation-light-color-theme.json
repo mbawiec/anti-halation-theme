@@ -2,7 +2,6 @@
   "name": "Warm Anti-Halation Light",
   "type": "light",
   "colors": {
-    // --- Główne tło (ciepły pergamin) i edytor ---
     "editor.background": "#f4efe6",
     "editor.foreground": "#2d2926",
     "editorCursor.foreground": "#a66800",
@@ -15,13 +14,9 @@
     "editorWhitespace.foreground": "#d4c8b8",
     "editorIndentGuide.background1": "#e5dac6",
     "editorIndentGuide.activeBackground1": "#b8aa97",
-
-    // --- Dopasowania nawiasów i linki w edytorze ---
     "editorBracketMatch.background": "#eae2d3",
     "editorBracketMatch.border": "#a66800",
     "editorLink.activeForeground": "#b84228",
-
-    // --- Pasek boczny (Sidebar) i Pasek aktywności ---
     "sideBar.background": "#eae3d5",
     "sideBar.foreground": "#423d38",
     "sideBar.border": "#dfd6c4",
@@ -33,8 +28,6 @@
     "activityBar.inactiveForeground": "#8c8072",
     "activityBarBadge.background": "#a66800",
     "activityBarBadge.foreground": "#ffffff",
-
-    // --- Zakładki (Tabs) ---
     "editorGroupHeader.tabsBackground": "#dfd6c4",
     "tab.activeBackground": "#f4efe6",
     "tab.activeForeground": "#2d2926",
@@ -42,19 +35,20 @@
     "tab.inactiveForeground": "#73675c",
     "tab.border": "#dfd6c4",
     "tab.activeBorderTop": "#a66800",
-
-    // --- Pasek stanu i Pasek tytułowy ---
     "statusBar.background": "#dfd6c4",
     "statusBar.foreground": "#423d38",
     "statusBar.border": "#d5cca8",
+    "statusBar.noFolderBackground": "#dfd6c4",
+    "statusBar.noFolderForeground": "#423d38",
+    "statusBar.noFolderBorder": "#d5cca8",
+    "statusBar.debuggingBackground": "#c47c00",
+    "statusBar.debuggingForeground": "#ffffff",
     "statusBarItem.remoteBackground": "#a66800",
     "statusBarItem.remoteForeground": "#ffffff",
     "titleBar.activeBackground": "#dfd6c4",
     "titleBar.activeForeground": "#2d2926",
     "titleBar.inactiveBackground": "#eae3d5",
     "titleBar.inactiveForeground": "#8c8072",
-
-    // --- Okna, Listy i Kontrolki ---
     "input.background": "#fbf8f3",
     "input.foreground": "#2d2926",
     "input.border": "#c2b4a1",
@@ -68,8 +62,6 @@
     "list.activeSelectionForeground": "#2d2926",
     "list.inactiveSelectionBackground": "#eae2d3",
     "list.inactiveSelectionForeground": "#2d2926",
-
-    // --- Terminal (Brak zniekształceń niebieskim światłem) ---
     "terminal.background": "#f4efe6",
     "terminal.foreground": "#2d2926",
     "terminal.ansiBlack": "#2d2926",
@@ -88,8 +80,6 @@
     "terminal.ansiBrightMagenta": "#b8527a",
     "terminal.ansiBrightCyan": "#a86d2b",
     "terminal.ansiBrightWhite": "#ffffff",
-
-    // --- Git ---
     "gitDecoration.modifiedResourceForeground": "#a66800",
     "gitDecoration.deletedResourceForeground": "#b84228",
     "gitDecoration.untrackedResourceForeground": "#4e6a2f",
@@ -191,8 +181,6 @@
       ],
       "settings": { "foreground": "#595047" }
     },
-
-    // --- REGULACJA METODYCZNA: MARKDOWN & LINKI (ELIMINACJA FIOLETU) ---
     {
       "name": "Markdown - Linki i URL-e",
       "scope": [
