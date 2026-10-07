@@ -16,7 +16,12 @@
     "editorIndentGuide.background1": "#e5dac6",
     "editorIndentGuide.activeBackground1": "#b8aa97",
 
-    // --- Pasek boczny (Sidebar) i Pasek aktywności (Activity Bar) ---
+    // --- Dopasowania nawiasów i linki w edytorze ---
+    "editorBracketMatch.background": "#eae2d3",
+    "editorBracketMatch.border": "#a66800",
+    "editorLink.activeForeground": "#b84228",
+
+    // --- Pasek boczny (Sidebar) i Pasek aktywności ---
     "sideBar.background": "#eae3d5",
     "sideBar.foreground": "#423d38",
     "sideBar.border": "#dfd6c4",
@@ -181,9 +186,67 @@
         "punctuation",
         "punctuation.separator",
         "punctuation.terminator",
-        "meta.brace"
+        "meta.brace",
+        "punctuation.definition.tag"
       ],
       "settings": { "foreground": "#595047" }
+    },
+
+    // --- REGULACJA METODYCZNA: MARKDOWN & LINKI (ELIMINACJA FIOLETU) ---
+    {
+      "name": "Markdown - Linki i URL-e",
+      "scope": [
+        "markup.underline.link",
+        "string.other.link.title",
+        "string.other.link.description",
+        "markup.underline.link.markdown"
+      ],
+      "settings": { "foreground": "#944a1d" }
+    },
+    {
+      "name": "Markdown - Tekst linku / Etykiety",
+      "scope": [
+        "string.other.link.title.markdown",
+        "string.other.link.description.title.markdown"
+      ],
+      "settings": { "foreground": "#4e6a2f", "fontStyle": "bold" }
+    },
+    {
+      "name": "Markdown - Nawiasy linków i znaki specjalne",
+      "scope": [
+        "punctuation.definition.link.markdown",
+        "punctuation.definition.metadata.markdown",
+        "punctuation.definition.string.begin.markdown",
+        "punctuation.definition.string.end.markdown"
+      ],
+      "settings": { "foreground": "#8c8072" }
+    },
+    {
+      "name": "Markdown - Nagłówki",
+      "scope": [
+        "markup.heading",
+        "entity.name.section.markdown",
+        "punctuation.definition.heading.markdown"
+      ],
+      "settings": { "foreground": "#a66800", "fontStyle": "bold" }
+    },
+    {
+      "name": "Markdown - Pogrubienie i Kursywa",
+      "scope": ["markup.bold"],
+      "settings": { "foreground": "#2d2926", "fontStyle": "bold" }
+    },
+    {
+      "name": "Markdown - Kod wierszowy (Inline Code)",
+      "scope": ["markup.inline.raw", "markup.raw.inline.markdown"],
+      "settings": { "foreground": "#4e6a2f" }
+    },
+    {
+      "name": "Markdown - Listy i Cytaty",
+      "scope": [
+        "beginning.punctuation.definition.list.markdown",
+        "markup.quote"
+      ],
+      "settings": { "foreground": "#8f5c22" }
     }
   ]
 }
