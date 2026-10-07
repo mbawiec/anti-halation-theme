@@ -1,0 +1,189 @@
+{
+  "name": "Warm Anti-Halation Light",
+  "type": "light",
+  "colors": {
+    // --- Główne tło (ciepły pergamin) i edytor ---
+    "editor.background": "#f4efe6",
+    "editor.foreground": "#2d2926",
+    "editorCursor.foreground": "#a66800",
+    "editor.lineHighlightBackground": "#eae2d3",
+    "editor.selectionBackground": "#dbceb6",
+    "editor.inactiveSelectionBackground": "#e5dac6",
+    "editor.wordHighlightBackground": "#e5dac6",
+    "editorLineNumber.foreground": "#a3988c",
+    "editorLineNumber.activeForeground": "#a66800",
+    "editorWhitespace.foreground": "#d4c8b8",
+    "editorIndentGuide.background1": "#e5dac6",
+    "editorIndentGuide.activeBackground1": "#b8aa97",
+
+    // --- Pasek boczny (Sidebar) i Pasek aktywności (Activity Bar) ---
+    "sideBar.background": "#eae3d5",
+    "sideBar.foreground": "#423d38",
+    "sideBar.border": "#dfd6c4",
+    "sideBarTitle.foreground": "#2d2926",
+    "sideBarSectionHeader.background": "#e2dacb",
+    "sideBarSectionHeader.foreground": "#2d2926",
+    "activityBar.background": "#dfd6c4",
+    "activityBar.foreground": "#a66800",
+    "activityBar.inactiveForeground": "#8c8072",
+    "activityBarBadge.background": "#a66800",
+    "activityBarBadge.foreground": "#ffffff",
+
+    // --- Zakładki (Tabs) ---
+    "editorGroupHeader.tabsBackground": "#dfd6c4",
+    "tab.activeBackground": "#f4efe6",
+    "tab.activeForeground": "#2d2926",
+    "tab.inactiveBackground": "#eae3d5",
+    "tab.inactiveForeground": "#73675c",
+    "tab.border": "#dfd6c4",
+    "tab.activeBorderTop": "#a66800",
+
+    // --- Pasek stanu i Pasek tytułowy ---
+    "statusBar.background": "#dfd6c4",
+    "statusBar.foreground": "#423d38",
+    "statusBar.border": "#d5cca8",
+    "statusBarItem.remoteBackground": "#a66800",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "titleBar.activeBackground": "#dfd6c4",
+    "titleBar.activeForeground": "#2d2926",
+    "titleBar.inactiveBackground": "#eae3d5",
+    "titleBar.inactiveForeground": "#8c8072",
+
+    // --- Okna, Listy i Kontrolki ---
+    "input.background": "#fbf8f3",
+    "input.foreground": "#2d2926",
+    "input.border": "#c2b4a1",
+    "input.placeholderForeground": "#8c8072",
+    "inputOption.activeBorder": "#a66800",
+    "dropdown.background": "#eae3d5",
+    "dropdown.foreground": "#2d2926",
+    "dropdown.border": "#c2b4a1",
+    "list.hoverBackground": "#eae2d3",
+    "list.activeSelectionBackground": "#dbceb6",
+    "list.activeSelectionForeground": "#2d2926",
+    "list.inactiveSelectionBackground": "#eae2d3",
+    "list.inactiveSelectionForeground": "#2d2926",
+
+    // --- Terminal (Brak zniekształceń niebieskim światłem) ---
+    "terminal.background": "#f4efe6",
+    "terminal.foreground": "#2d2926",
+    "terminal.ansiBlack": "#2d2926",
+    "terminal.ansiRed": "#b84228",
+    "terminal.ansiGreen": "#4e6a2f",
+    "terminal.ansiYellow": "#a66800",
+    "terminal.ansiBlue": "#4e6a2f",
+    "terminal.ansiMagenta": "#9e4265",
+    "terminal.ansiCyan": "#8f5c22",
+    "terminal.ansiWhite": "#f4efe6",
+    "terminal.ansiBrightBlack": "#73675c",
+    "terminal.ansiBrightRed": "#d15134",
+    "terminal.ansiBrightGreen": "#5d7e38",
+    "terminal.ansiBrightYellow": "#c47c00",
+    "terminal.ansiBrightBlue": "#5d7e38",
+    "terminal.ansiBrightMagenta": "#b8527a",
+    "terminal.ansiBrightCyan": "#a86d2b",
+    "terminal.ansiBrightWhite": "#ffffff",
+
+    // --- Git ---
+    "gitDecoration.modifiedResourceForeground": "#a66800",
+    "gitDecoration.deletedResourceForeground": "#b84228",
+    "gitDecoration.untrackedResourceForeground": "#4e6a2f",
+    "gitDecoration.ignoredResourceForeground": "#a3988c"
+  },
+  "tokenColors": [
+    {
+      "name": "Komentarze",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": { "foreground": "#8c8072", "fontStyle": "italic" }
+    },
+    {
+      "name": "Słowa kluczowe i modyfikatory",
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier",
+        "keyword.operator.new",
+        "keyword.operator.expression",
+        "keyword.operator.logical"
+      ],
+      "settings": { "foreground": "#a66800", "fontStyle": "bold" }
+    },
+    {
+      "name": "Ciągi znaków (Strings)",
+      "scope": [
+        "string",
+        "punctuation.definition.string",
+        "string.quoted",
+        "constant.character.escape"
+      ],
+      "settings": { "foreground": "#b84228" }
+    },
+    {
+      "name": "Funkcje i metody",
+      "scope": [
+        "entity.name.function",
+        "meta.function-call",
+        "support.function",
+        "entity.name.method"
+      ],
+      "settings": { "foreground": "#4e6a2f" }
+    },
+    {
+      "name": "Klasy, typy i interfejsy",
+      "scope": [
+        "entity.name.type",
+        "entity.name.class",
+        "entity.name.namespace",
+        "entity.name.scope-resolution",
+        "support.type",
+        "support.class"
+      ],
+      "settings": { "foreground": "#3b6d61", "fontStyle": "bold" }
+    },
+    {
+      "name": "Zmienne i parametry",
+      "scope": [
+        "variable",
+        "meta.variable",
+        "variable.other.readwrite",
+        "variable.parameter"
+      ],
+      "settings": { "foreground": "#2d2926" }
+    },
+    {
+      "name": "Właściwości obiektów (Properties)",
+      "scope": ["variable.other.property", "support.type.property-name"],
+      "settings": { "foreground": "#8f5c22" }
+    },
+    {
+      "name": "Stałe, liczby i wartości logiczne",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "constant.other",
+        "variable.other.constant"
+      ],
+      "settings": { "foreground": "#944a1d" }
+    },
+    {
+      "name": "Znaczniki HTML/XML",
+      "scope": ["entity.name.tag", "punctuation.definition.tag"],
+      "settings": { "foreground": "#a66800" }
+    },
+    {
+      "name": "Atrybuty HTML/XML",
+      "scope": ["entity.other.attribute-name"],
+      "settings": { "foreground": "#8f5c22" }
+    },
+    {
+      "name": "Znaki interpunkcyjne i nawiasy",
+      "scope": [
+        "punctuation",
+        "punctuation.separator",
+        "punctuation.terminator",
+        "meta.brace"
+      ],
+      "settings": { "foreground": "#595047" }
+    }
+  ]
+}
